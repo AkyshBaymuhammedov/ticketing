@@ -17,8 +17,8 @@ spec:
           name: expiration
           resources:
             limits:
-              memory: "128Mi"
-              cpu: "500m"
+              memory: "64Mi"
+              cpu: "100m"
           env:
             - name: NATS_URL
               value: "http://nats-srv:4222"
