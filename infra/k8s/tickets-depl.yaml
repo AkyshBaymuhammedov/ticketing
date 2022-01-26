@@ -15,10 +15,6 @@ spec:
       containers:
         - image: akysh5/tickets
           name: tickets
-          resources:
-            limits:
-              memory: "64Mi"
-              cpu: "100m"
           env:
             - name: MONGO_URI
               value: "mongodb://tickets-mongo-srv:27017/tickets"

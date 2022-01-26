@@ -15,10 +15,6 @@ spec:
       containers:
         - image: akysh5/expiration
           name: expiration
-          resources:
-            limits:
-              memory: "64Mi"
-              cpu: "100m"
           env:
             - name: NATS_URL
               value: "http://nats-srv:4222"

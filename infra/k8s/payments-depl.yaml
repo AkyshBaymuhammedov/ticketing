@@ -15,10 +15,6 @@ spec:
       containers:
         - image: akysh5/payments
           name: payments
-          resources:
-            limits:
-              memory: "64Mi"
-              cpu: "100m"
           env:
             - name: MONGO_URI
               value: "mongodb://payments-mongo-srv:27017/payments"
